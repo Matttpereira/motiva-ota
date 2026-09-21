@@ -21,7 +21,7 @@ const char* SSID     = "Wokwi-GUEST";
 const char* PASSWORD = "";
 
 // --- URL do manifesto de versão no repositório remoto ---
-const char* MANIFEST_URL = "https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/version.json";
+const char* MANIFEST_URL = "https://raw.githubusercontent.com/Matttpereira/motiva-ota/main/version.json";
 
 // --- Versão atual deste firmware ---
 const String VERSAO_ATUAL = "1.0";
