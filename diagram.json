@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "author": "Grupo Motiva - FIAP",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-v1",
+      "id": "esp32",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 80,
+      "left": 220,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 130,
+      "left": 160,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 150,
+      "left": 160,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 170,
+      "left": 160,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp32:16", "r1:1", "red",   [] ],
+    [ "esp32:17", "r2:1", "green", [] ],
+    [ "esp32:18", "r3:1", "blue",  [] ],
+    [ "r1:2", "rgb1:R", "red",   [] ],
+    [ "r2:2", "rgb1:G", "green", [] ],
+    [ "r3:2", "rgb1:B", "blue",  [] ],
+    [ "rgb1:COM", "esp32:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
